@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="folder/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="folder/stylecss.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <style type="text/css">
+	
+	  
+      </style>
+    <script language="javascript">
+		 
+    
+      
+      function validation(Form_obj)
+			{
+				if(Form_obj.name.value.length==0)
+        {
+				 alert("Please,fill up the remaining information!!");							
+      	 Form_obj.name.focus();
+				 return false;
+			  }
+			if(Form_obj.contact.value.length==0)
+      {
+				alert("Please,fill up the remaining information!!");		
+				Form_obj.contact.focus();
+				return false;
+			}
+			if(Form_obj.address.value.length==0)
+      {
+      	alert("Please,fill up the remaining information!!");
+				Form_obj.address.focus();
+				return false;
+			}
+			return true;
+		}
+			</script>
+  </head>
+  <body bgcolor="#EAEDED">
+     <div class="title"><br/><center><img src="http://localhost/FoodWasteMgmt/img/title.png"></center>
+       <a  class="btn" href="http://localhost/FoodWasteMgmt/loginpage.php" target="_self">ADMIN LOGIN</a>
+      <br/><br/><br/></div> 
+         <center>
+      <h1>More text here........</h1>
+             <h1>Fill Pick Up Details</h1>
+     <div class="container center_div">
+        <form action="insertFoodRe.php" method="post" name="entry" onsubmit="return validation(this)">
+        <table align="center" width="100%">
+          <tbody >
+            <tr>
+              <!-- Row 1 -->
+              <td align="center">
+                <h2>Name : </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="name" class="btn btn-danger" value="" size="50" id="my" type="text"></td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 2 -->
+              <td >
+                <h2>Contact No.: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="contact" class="btn btn-danger" value="" id="my"
+                  type="text"></td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 3 -->
+              <td>
+                <h2>Address: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="address" class="btn btn-danger" value="" id="my"
+                  type="text"></td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 4 -->
+              <td>
+                <h2>Address Type: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td>
+                <select name="add_type" class="btn-warning">
+                  <option value="HOME">HOME</option>
+                  <option value="OFFICE">OFFICE</option>
+                  <option value="RESTAURANT">RESTAURANT</option>
+                </select>
+              </td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 3 -->
+              <td>
+                <h2>Pickup Date : </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="date" id="my" class="btn btn-danger" value="2020-02-01" type="date"> </td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 4 -->
+              <td>
+                <h2>Pick Up Time Slot: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td>
+                <select name="pickup_time" class="btn btn-danger">
+                  <option value="08:00 AM to 12:00 PM">08:00 AM to 12:00 PM</option>
+                  <option value="07:00 PM to 12:00 AM">07:00 PM to 12:00 AM</option>
+                </select>
+              </td>
+              <!-- Col 2 --> </tr>
+            <tr>
+            </tr>
+            <tr>
+              <!-- Row 3 -->
+              <td>
+                <pre><br><br><input id="my" class="btn btn-danger" type="reset"><input name="submit" value="Submit" class="btn btn-danger"
+id="my" type="submit"></pre>
+              </td>
+              <!-- Col 2 --> </tr>
+          </tbody>
+        </table>
+      </form>
+        </div>
+    </center>
+  </body>
+</html>

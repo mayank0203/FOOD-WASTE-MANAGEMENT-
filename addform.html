@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="stylecss.css">
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <style type="text/css">
+    .pic {
+           background-image: url('img/food-waste-article-hero.jpg');
+            background-attachment: fixed;
+            background-size: 100%;
+        background-position: left;
+        background-repeat: no-repeat;    
+        }
+	img{
+		
+        
+	 }
+			h1 { 
+    font-family:"Oswald";
+	font-weight:bold;
+	font-size: 40px;
+	text-align: center;
+	color: #0B3B17;
+	margin: 0 0 30px 0;
+	padding: 15px 5px 0px 5px ;
+	}
+
+h2 {
+   font-family:"Wellfleet";
+   font-weight: bold;
+   font-size: 20px;
+   font-style:normal;
+   text-align: left;
+   color: #0B173B;
+   margin: 0px 10px 20px 0px ;
+
+}
+        
+        pre{
+            border: none;
+            background: transparent;
+        }
+/* .title{background-color:#1c87c9;}*/
+#my {
+   font-family:"Arial";
+   font-weight: bold;
+   font-size: 16px;
+   font-style:normal;
+   text-align: left;
+   color: #1C1C1C;
+   margin: 0px 10px 20px 0px ;
+
+}
+.center_div{
+    margin: 0 auto;
+    width:40% /* value of your choice which suits your alignment */      
+        
+}
+
+ 
+
+a:link {
+    text-decoration: none;
+color: white;
+}
+
+a:visited {
+    text-decoration: none;
+color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+	color: white;
+}
+.btn:hover {
+  
+  text-decoration: none;
+}
+        
+      
+      
+      </style>
+    <script language="javascript">
+		 
+    
+      
+      function validation(Form_obj)
+			{
+				if(Form_obj.name.value.length==0)
+        {
+				 alert("Please,fill up the remaining information!!");							
+      	 Form_obj.name.focus();
+				 return false;
+			  }
+			if(Form_obj.contact.value.length==0)
+      {
+				alert("Please,fill up the remaining information!!");		
+				Form_obj.contact.focus();
+				return false;
+			}
+			if(Form_obj.address.value.length==0)
+      {
+      	alert("Please,fill up the remaining information!!");
+				Form_obj.address.focus();
+				return false;
+			}
+			return true;
+		}
+			</script>
+  </head>
+  <body>
+     <div class="title" align="center"><img src="img/food-waste-challenges-solutions.jpg" width="70%"> <br/><center>
+<!--         <img src="http://localhost/FoodWasteMgmt/img/food_waste_1600x900.jpg" width="60%"></center>-->
+      </div> 
+         <center>
+             <h6><b>Together, we can reverse this unacceptable trend and improve lives. In industrialised regions, almost half of the total food squandered, around 300 million tonnes annually, occurs because producers, retailers and consumers discard food that is still fit for consumption.</b>
+            </h6>
+             <h6><b>In many places in the developed world, we eat or waste probably twice as much food calories as we really need. We are wasteful of food. We ship all over the world. We are not releasing that generating the energy to ship the food around the world is also ruining our climate.
+             </h6><h4>FILL THE PICK-UP DETAILS.</b></h4></center>
+         <a href="http://localhost/FoodWasteMgmt/index.html" class="btn btn-primary" style="width:10%">HOME</a>
+         <a class="btn btn-success" href="http://localhost/FoodWasteMgmt/loginpage.php" target="_self"><h7>ADMIN LOGIN</h7></a>
+             <center><div class="pic"
+                          
+     <div class="container center_div">
+        <form action="insertFoodRe.php" method="post" name="entry" onsubmit="return validation(this)">
+        <table width="80%">
+          <tbody >
+            <tr>
+              <!-- Row 1 -->
+              <td align="center">
+                <h2>Name : </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="name" class="btn btn-dark" value="" size="50" id="my" type="text"></td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 2 -->
+              <td >
+                <h2>Contact No.: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="contact" class="btn btn-dark" value="" size="50" id="my"
+                  type="text"></td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 3 -->
+              <td>
+                <h2>Address: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="address" class="btn btn-dark" value="" size="50" id="my"
+                  type="text"></td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 4 -->
+              <td>
+                <h2>Address Type: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td>
+                <select name="add_type" class="btn btn-dark">
+                  <option value="HOME">HOME</option>
+                  <option value="OFFICE">OFFICE</option>
+                  <option value="RESTAURANT">RESTAURANT</option>
+                </select>
+              </td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 3 -->
+              <td>
+                <h2>Pickup Date : </h2>
+              </td>
+              <!-- Col 1 -->
+              <td><input name="date" id="my" class="btn btn-dark" value="2020-02-01" size="50" type="date"> </td>
+              <!-- Col 2 --> </tr>
+            <tr>
+              <!-- Row 4 -->
+              <td>
+                <h2>Pick Up Time Slot: </h2>
+              </td>
+              <!-- Col 1 -->
+              <td>
+                <select name="pickup_time" class="btn btn-dark">
+                  <option value="08:00 AM to 12:00 PM">08:00AM to12:00 PM</option>
+                  <option value="07:00 PM to 12:00 AM">07:00PM to12:00 AM</option>
+                </select>
+              </td>
+              <!-- Col 2 --> </tr>
+            <tr>
+            </tr>
+            <tr align="center">
+              <!-- Row 3 -->
+              <td>
+              <pre>
+                  <input id="my" class="btn btn-danger" type="reset"></td>
+                    <td>
+                    <input name="submit" value="Submit" class="btn btn-success" id="my" type="submit">
+            </pre>
+                    </td>
+              <!-- Col 2 --> </tr>
+          </tbody>
+        </table>
+      </form>
+        </div>
+    </center>
+         </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+
+	img{
+		
+	 }
+	
+			h1 { 
+    font-family:"Oswald";
+	font-weight:bold;
+	font-size: 40px;
+	text-align: center;
+	color: #0B3B17;
+	margin: 0 0 30px 0;
+	padding: 15px 5px 0px 5px ;
+	}
+
+h2 {
+   font-family:"Wellfleet";
+   font-weight: bold;
+   font-size: 20px;
+   font-style:normal;
+   text-align: left;
+   color: #0B173B;
+   margin: 0px 10px 20px 0px ;
+
+}
+ .title{background-color:firebrick ;}
+#my {
+   font-family:"Arial";
+   font-weight: bold;
+   font-size: 16px;
+   font-style:normal;
+   text-align: left;
+   color: #1C1C1C;
+   margin: 0px 10px 20px 0px ;
+
+}
+.center_div{
+    margin: 0 auto;
+    width:40% /* value of your choice which suits your alignment */
+}
+
+ 
+ .btn {
+  text-shadow: 0px 1px 3px #666666;
+  -webkit-box-shadow: 2px 3px 4px #615661;
+  -moz-box-shadow: 2px 3px 4px #615661;
+  box-shadow: 2px 3px 4px #615661;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  background: #274e13;
+  padding: 10px 20px 10px 25px;
+  margin:1px;
+  text-decoration: none;
+  text-align:center;
+  float: right;     
+}
+a:link {
+    text-decoration: none;
+color: white;
+}
+
+a:visited {
+    text-decoration: none;
+color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+	color: white;
+}
+.btn:hover {
+  background: #5a9157;
+  text-decoration: none;
+}
+      
+    span {
+color:red
+}
+h2
+{
+text-align:center;
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px
+}       
+/*jasmine_007*/
+hr
+{
+border:0;
+border-bottom:1px solid;
+margin:10px -40px;
+margin-bottom:30px
+}
+#login
+{
+margin: auto;
+width:350px;
+border-radius:10px;
+border:2px solid #ccc;
+padding:10px 40px 25px;
+background-color:#b6e6ff;
+}
+input[type=text],input[type=password]
+{
+width:96.5%;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:20px;
+}
+input[type=submit]
+{
+width:100%;
+background-color:#2f90ff;
+color:#fff;
+border:2px solid white
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+}
+#profile
+{
+padding:50px;
+border:1px dashed grey;
+font-size:20px;
+background-color:#DCE6F7
+}
+#logout
+{
+float:right;
+padding:5px;
+border:dashed 1px gray
+}
+a
+{
+text-decoration:none;
+color:#6495ed
+}
+i
+{
+font-size: 20px;
+color:#FFFC44
+} 
+.heading_admin
+{
+  font-family: sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: brown;
+    padding-left: 100px;
+}
+
+.data_admin
+{
+  font-family: fantasy;
+  font-size: 30px;
+  text-decoration: none;
+  color: darkslategrey;
+}
+hr.new5 {
+  border: 10px solid green;
+  border-radius: 5px;
+}
