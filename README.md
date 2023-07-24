@@ -1,0 +1,2 @@
+# FOOD-WASTE-MANAGEMENT-
+Academic Projec
